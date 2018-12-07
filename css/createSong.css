@@ -1,92 +1,95 @@
-* {
-    font-family: Tahoma;
-    margin: 5px;
-}
+/** {*/
+    /*font-family: Tahoma;*/
+    /*margin: 5px;*/
+/*}*/
 
-.carousel-item img {
-    height: 500px;
-    padding-top: 100px;
-}
+/*.carousel-item img {*/
+    /*height: 500px;*/
+    /*padding-top: 100px;*/
+/*}*/
 
-#footer::after {
-    content: '';
-    clear: both;
-    display: block;
-}
+/*#footer::after {*/
+    /*content: '';*/
+    /*clear: both;*/
+    /*display: block;*/
+/*}*/
 
-.footer {
+/*.footer {*/
 
-    padding-top: 5%;
-}
+    /*padding-top: 5%;*/
+/*}*/
 
-a {
-    text-decoration: none;
-}
+/*a {*/
+    /*text-decoration: none;*/
+/*}*/
 
-.footer .bug {
-    width: 45%;
-    float: left;
-    padding-left: 325px;
-    text-decoration: none;
+/*.footer .bug {*/
+    /*width: 45%;*/
+    /*float: left;*/
+    /*padding-left: 325px;*/
+    /*text-decoration: none;*/
+/*}*/
 
-}
+/*.footer .bug ul {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
 
-.footer .bug ul {
-    margin: 0;
-    padding: 0;
-}
+/*.footer .bug ul li {*/
+    /*list-style: none;*/
+/*}*/
 
-.footer .bug ul li {
-    list-style: none;
-}
+/*.footer .bug ul li a {*/
+    /*color: #4c4c4c;*/
+    /*display: inline-block;*/
+    /*margin-bottom: 15px;*/
+    /*transition: .4s;*/
+/*}*/
 
-.footer .bug ul li a {
-    color: #4c4c4c;
-    display: inline-block;
-    margin-bottom: 15px;
-    transition: .4s;
-}
+/*.footer .bug ul li a:hover {*/
+    /*color: #dd4923;*/
+/*}*/
 
-.footer .bug ul li a:hover {
-    color: #dd4923;
-}
+/*.footer .support {*/
+    /*width: 53.5%;*/
+    /*float: left;*/
+    /*padding-left: 100px;*/
+    /*text-decoration: none;*/
+/*}*/
 
-.footer .support {
-    width: 53.5%;
-    float: left;
-    padding-left: 100px;
-    text-decoration: none;
-}
+/*.footer .support ul {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
 
-.footer .support ul {
-    margin: 0;
-    padding: 0;
-}
+/*.footer .support ul li {*/
+    /*list-style: none;*/
+/*}*/
 
-.footer .support ul li {
-    list-style: none;
-}
+/*.footer .support ul li a {*/
+    /*color: #4c4c4c;*/
+    /*display: inline-block;*/
+    /*margin-bottom: 15px;*/
+    /*transition: .4s;*/
+    /*text-decoration: none;*/
+    /*list-style-type: none;*/
+/*}*/
 
-.footer .support ul li a {
-    color: #4c4c4c;
-    display: inline-block;
-    margin-bottom: 15px;
-    transition: .4s;
-    text-decoration: none;
-    list-style-type: none;
-}
+/*.footer .support ul li a:hover {*/
+    /*color: #dd4923;*/
+/*}*/
 
-.footer .support ul li a:hover {
-    color: #dd4923;
-}
+/*.nav-item .nav-link {*/
+    /*color: black;*/
+/*}*/
 
-.nav-item .nav-link {
-    color: black;
-}
+/*.navbar {*/
+    /*list-style: none;*/
+/*}*/
+/*ul .nav-item  a:hover {*/
+    /*color: #304ffe;*/
+/*}*/
 
-.navbar {
-    list-style: none;
-}
-ul .nav-item  a:hover {
-    color: #304ffe;
-}
+/*.error {*/
+    /*color: red;*/
+/*}*/

@@ -1,44 +1,44 @@
 var validator = $('#createSong').validate({
-    rules: {
-        name: {
-            required: true,
-        },
-        singer: {
-            required: true
-        },
-        description: {
-            required: true,
-        },
-        author: {
-            required: true,
-        },
-        thumbnail: {
-            required: true,
-        },
-        link: {
-            required: true,
-        },
-    },
-    messages: {
-        name: {
-            required: 'vui long nhap ten bai hat',
-        },
-        singer: {
-            required: 'vui long nhap ten ca si',
-        },
-        description:{
-            required: 'vui long nhap mo ta',
-        },
-        author: {
-            required:'vui long nhap ten tac gia',
-        },
-        thumbnail: {
-            required: 'vui long nhap thumbnail',
-        },
-        link: {
-            required: 'vui long nhap link bai hat',
-        },
-    },
+    // rules: {
+    //     name: {
+    //         required: true,
+    //     },
+    //     singer: {
+    //         required: true
+    //     },
+    //     description: {
+    //         required: true,
+    //     },
+    //     author: {
+    //         required: true,
+    //     },
+    //     thumbnail: {
+    //         required: true,
+    //     },
+    //     link: {
+    //         required: true,
+    //     },
+    // },
+    // messages: {
+    //     name: {
+    //         required: 'Please enter Name song',
+    //     },
+    //     singer: {
+    //         required: 'Please enter Singer',
+    //     },
+    //     description:{
+    //         required: 'Please enter description',
+    //     },
+    //     author: {
+    //         required:'Please enter Author',
+    //     },
+    //     thumbnail: {
+    //         required: 'Please enter thumbnail',
+    //     },
+    //     link: {
+    //         required: 'Please enter link',
+    //     },
+    // },
     submitHandler: function (form, event) {
         event.preventDefault();
         var senderOject = {
@@ -55,7 +55,7 @@ var validator = $('#createSong').validate({
             contentType: "application/json; charset = utf-8",
             Authorization: "Basic " + localStorage.getItem('my-token'),
             beforeSend: function (xhr) {
-                / Authorization header /
+                // / Authorization header /
                 xhr.setRequestHeader("Authorization", "Basic " +localStorage.getItem('my-token'));
             },
             data: JSON.stringify(senderOject),

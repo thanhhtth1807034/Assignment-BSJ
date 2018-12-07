@@ -3,413 +3,439 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/latestSong.css">
     <link rel="stylesheet" href="../css/mdb.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Lastest Song</title>
 </head>
 <body>
-    <div class="row m-0">
-        <div class="col-md-2">
-            <div id="menu">
-                <div class="text-center"><i class="fas fa-headphones fa-5x"></i></div>
-                <ul class="m-0" >
-                    <li>BROWSE MUSIC</li>
-                    <li><i class="fas fa-search px-2"></i><a href="#">DISCOVER</a></li>
-                    <li><i class="fas fa-music px-2"></i><a href="#">MY MUSIC</a></li>
-                    <li><i class="fas fa-cloud-download-alt px-2"></i><a href="#">DOWNLOAD</a></li>
-                    <li>YOUR MUSIC</li>
-                    <li><i class="fas fa-heart px-2"></i><a href="#">Favourite</a></li>
-                    <li><i class="fas fa-history px-2"></i><a href="#">History</a></li>
-                    <li>MY PLAYLIST</li>
-                    <li><i class="fas fa-list-ol px-2"></i><a href="#">Top Charts</a></li>
-                    <li><i class="fas fa-list-alt px-2"></i><a href="#">My Love</a></li>
-                    <li><i class="fas fa-list-alt px-2"></i><a href="#">Best Memories</a></li>
+<div class="row m-0">
+    <div class="col-md-2">
+        <div id="menu">
+            <div class="text-center"><i class="fas fa-headphones fa-5x"></i></div>
+            <ul class="m-0">
+                <li>BROWSE MUSIC</li>
+                <li><i class="fas fa-search px-2"></i><a href="#">DISCOVER</a></li>
+                <li><i class="fas fa-music px-2"></i><a href="#">MY MUSIC</a></li>
+                <li><i class="fas fa-cloud-download-alt px-2"></i><a href="#">DOWNLOAD</a></li>
+                <li>YOUR MUSIC</li>
+                <li><i class="fas fa-heart px-2"></i><a href="#">Favourite</a></li>
+                <li><i class="fas fa-history px-2"></i><a href="#">History</a></li>
+                <li>MY PLAYLIST</li>
+                <li><i class="fas fa-list-ol px-2"></i><a href="#">Top Charts</a></li>
+                <li><i class="fas fa-list-alt px-2"></i><a href="#">My Love</a></li>
+                <li><i class="fas fa-list-alt px-2"></i><a href="#">Best Memories</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="col-md-10">
+        <div class="mynav">
+            <nav class="navbar navbar-expand-lg  w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="latestSong.html"><i class="fas fa-home"></i><span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="latestSong.html">Latest Song</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#createModal">Create Song
+                                Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mySong.html">My Song</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#registerModal2">
+                                Register
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 pr-5">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class=" my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+
+        <!--<div class="card-header">-->
+
+        <!--<ul class="navbar">-->
+
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link active" href="#">Home</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="latestSong.html">Latest Song</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#" data-toggle="modal" data-target="#createModal" >Create Song Form</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="mySong.html">My Song</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#"  data-toggle="modal" data-target="#registerModal2">-->
+        <!--register-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">-->
+        <!--Login-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<form class="form-inline my-2 my-lg-0 ">-->
+        <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+        <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+        <!--</form>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100"
+                         src="https://www.bostonmagazine.com/wp-content/uploads/sites/2/2012/12/rockconcert.jpg"
+                         alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                         src="http://www.mondomusicamilano.it/uploads/2014/07/16/suonare%20in%20una%20band%20a%20milano.jpg"
+                         alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                         src="https://png.pngtree.com/thumb_back/fw800/back_pic/03/74/97/6157bd123421d15.jpg"
+                         alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+        <div class="h3 text-center">List Song</div>
+        <div class="p-5">
+            <div class="list-song row" id="list-song">
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="footer">
+            <div class="bug">
+                <h3>PHẢN HỒI</h3>
+                <ul>
+                    <li><a href="#">Báo lỗi</a></li>
+                    <li><a href="#">Trợ giúp</a></li>
+                    <li><a href="#">Tư vấn</a></li>
+                    <li><a href="#">Quảng cáo</a></li>
                 </ul>
             </div>
-
-        </div>
-        <div class="col-md-10">
-            <div class="mynav">
-                <nav class="navbar navbar-expand-lg  w-100">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="latestSong.html">Latest Song</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="modal" data-target="#createModal">Create Song
-                                    Form</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="mySong.html">My Song</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="modal" data-target="#registerModal2">
-                                    Register
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
-                                    Login
-                                </a>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0 pr-5">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-                </nav>
-
+            <div class="support">
+                <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Thỏa thuận sử dụng</a></li>
+                    <li><a href="#">Trợ giúp</a></li>
+                    <li><a href="#">Liện Hệ</a></li>
+                </ul>
             </div>
-
-            <!--<div class="card-header">-->
-
-                <!--<ul class="navbar">-->
-
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link active" href="#">Home</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link" href="latestSong.html">Latest Song</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link" href="#" data-toggle="modal" data-target="#createModal" >Create Song Form</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link" href="mySong.html">My Song</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link" href="#"  data-toggle="modal" data-target="#registerModal2">-->
-                            <!--register-->
-                        <!--</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                        <!--<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">-->
-                            <!--Login-->
-                        <!--</a>-->
-                    <!--</li>-->
-                    <!--<form class="form-inline my-2 my-lg-0 ">-->
-                        <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                        <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-                    <!--</form>-->
-                <!--</ul>-->
+            <!--<div class="social d-flex justify-content-center ">-->
+                <!--<a href="https://www.facebook.com/may.phieudu.1614" target="_blank"><i-->
+                        <!--class="fab fa-facebook-square fa-3x m-2"></i></a>-->
+                <!--<a href="https://www.instagram.com/hoanggtatthanh/" target="_blank"><i-->
+                        <!--class="fab fa-instagram fa-3x m-2"></i></a>-->
+                <!--<a href="https://twitter.com/?lang=vi" target="_blank"><i-->
+                        <!--class="fab fa-twitter-square fa-3x m-2"></i></a>-->
+                <!--<a href="https://telegram.org/" target="_blank"><i class="fab fa-telegram fa-3x m-2"></i></a>-->
             <!--</div>-->
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://www.bostonmagazine.com/wp-content/uploads/sites/2/2012/12/rockconcert.jpg" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="http://www.mondomusicamilano.it/uploads/2014/07/16/suonare%20in%20una%20band%20a%20milano.jpg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://png.pngtree.com/thumb_back/fw800/back_pic/03/74/97/6157bd123421d15.jpg" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-
+            <div id="topControl" class="fixed-action-btn">
+                <i class="fas fa-angle-double-up fa-3x"></i>
             </div>
-            <div class="h3 text-center">List Song</div>
-            <div class="p-5">
-                <div class="list-song row" id="list-song">
-                </div>
+            <div class="footer-bottom text-center">
+                © Copyright 2018. Designed by HTT
             </div>
-            <div class="clear"></div>
-
-            <div class="footer">
-                <div class="bug">
-                    <h3>PHẢN HỒI</h3>
-                    <ul>
-                        <li><a href="#">Báo lỗi</a></li>
-                        <li><a href="#">Trợ giúp</a></li>
-                        <li><a href="#">Tư vấn</a></li>
-                        <li><a href="#">Quảng cáo</a></li>
-                    </ul>
-                </div>
-                <div class="support">
-                    <h3>HỖ TRỢ KHÁCH HÀNG</h3>
-                    <ul>
-                        <li><a href="#">Chính sách bảo mật</a></li>
-                        <li><a href="#">Thỏa thuận sử dụng</a></li>
-                        <li><a href="#">Trợ giúp</a></li>
-                        <li><a href="#">Liện Hệ</a></li>
-                    </ul>
-                </div>
-                <div class="social d-flex justify-content-center ">
-                    <a href="https://www.facebook.com/may.phieudu.1614" target="_blank">
-                        <img src="https://www.xda-developers.com/files/2016/10/Facebook-Lite-Feature-Image-bordered.png" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/hoanggtatthanh/" target="_blank">
-                        <img src="data:image/jpeg;base64,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" alt="">
-                    </a>
-                    <a href="https://twitter.com/?lang=vi" target="_blank">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpp_aguod5CBTt8KUayTt6ZccnHwUlsfIzrVyYBsSMFOHm4k4dpg" alt="">
-                    </a>
-                    <a href="https://telegram.org/" target="_blank">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTICpDKUFRHolVbaigyJ0h_KVKF7pOJXTeb4MOwafhmpMbD3GbQJA" alt="">
-                    </a>
-
-                    <!--<i class="fab fa-facebook-square fa-5x m-2"></i>-->
-                    <!--<i class="fab fa-instagram fa-5x m-2"></i>-->
-                    <!--<i class="fab fa-twitter-square fa-5x m-2"></i>-->
-                </div>
-                <div id="topControl" class="fixed-action-btn">
-                    <i class="fa fa-chevron-up "></i>
-                </div>
-                <div class="footer-bottom text-center">
-
-                    © Copyright 2018. Designed by HTT
-                </div>
-            </div>
-
         </div>
 
     </div>
 
+</div>
 
-    <div class="container-fluid">
-        <div class="audio-player fixed-bottom rounded bg-dark">
-            <div id="play-btn" >
-                <img class="spin" src="" onclick="playOrPause()"  alt="">
-            </div>
-            <div class="audio-wrapper" id="player-container" >
-                <audio id="player" ontimeupdate="initProgressBar()">
-                    <source src="" type="audio/mp3">
-                </audio>
-            </div>
-            <div class="player-controls scrubber">
-                <div class="song-player">
-                    <div class="song-detail">
-                        <marquee behavior="scroll" direction="right">
-                            <div class="current-song-title">
-                                <span id="current-play-title"></span>
-                            </div>
-                        </marquee>
-                    </div>
+<div class="container-fluid">
+    <div class="audio-player fixed-bottom rounded ">
+        <div id="play-btn">
+            <img class="spin" src="" onclick="playOrPause()" alt="">
+        </div>
+        <div class="audio-wrapper" id="player-container">
+            <audio id="player" ontimeupdate="initProgressBar()">
+                <source src="" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="player-controls scrubber">
+            <div class="song-player">
+                <div class="song-detail">
+                    <marquee behavior="scroll" direction="right">
+                        <div class="current-song-title">
+                            <span id="current-play-title"></span>
+                        </div>
+                    </marquee>
                 </div>
-                <span id="seekObjContainer">
+            </div>
+            <span id="seekObjContainer">
 			  <progress id="seekObj" value="0" max="1"></progress>
 			</span>
-                <br>
-                <small style="float: left; position: relative; left: 15px;" class="start-time"></small>
-                <small style="float: right; position: relative; right: 20px;" class="end-time"></small>
-            </div>
-            <div class="album-image mr-5">
-                <img  id="scroll" class="" src="" alt="">
-            </div>
+            <br>
+            <small style="float: left; position: relative; left: 15px;" class="start-time"></small>
+            <small style="float: right; position: relative; right: 20px;" class="end-time"></small>
         </div>
-        <!--<div class="clear"></div>-->
-
-
+        <div class="album-image mr-5">
+            <img id="scroll" class="" src="" alt="">
+        </div>
     </div>
+    <!--<div class="clear"></div>-->
+</div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="form-header blue-gradient">
-                        <h3 class="modal-title" ><i class="fa fa-lock" id="loginModalLabel" ></i> Login:</h3>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="form-header blue-gradient">
+                    <h3 class="modal-title"><i class="fa fa-lock" id="loginModalLabel"></i> Login:</h3>
+                </div>
+                <!--<h5 class="modal-title" id="exampleModalLabel">Modal</h5>-->
+                <button type="button" id="btn-show-modal" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" id="loginForm" name="login-form">
+                    <div class="form-group">
+                        <i class="fa fa-envelope prefix"></i>
+                        <label for="loginInputEmail1">Email address</label>
+                        <input type="text" name="email" class="form-control" id="loginInputEmail1"
+                               aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.
+                        </small>
                     </div>
-                    <!--<h5 class="modal-title" id="exampleModalLabel">Modal</h5>-->
-                    <button type="button" id="btn-show-modal" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="" id="loginForm" name="login-form">
-                        <div class="form-group">
-                            <i class="fa fa-envelope prefix"></i>
-                            <label for="loginInputEmail1">Email address</label>
-                            <input type="text" name="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                            <i class="fa fa-lock prefix"></i>
-                            <label for="loginInputPassword1">Password</label>
-                            <input type="password" name="password" class="form-control" id="loginInputPassword1" placeholder="Password">
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="options">
-                                <p>Not a member? <a href="#">Sign Up</a></p>
-                                <p>Forgot <a href="#">Password?</a></p>
-                            </div>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary" id="btn-submit" value="submit">Submit</button>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="registerModal2" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="form-header blue-gradient ">
-                        <h3 class="modal-title" ><i class="fa fa-user" id="registerModalLabel2" ></i> Register:</h3>
+                    <div class="form-group">
+                        <i class="fa fa-lock prefix"></i>
+                        <label for="loginInputPassword1">Password</label>
+                        <input type="password" name="password" class="form-control" id="loginInputPassword1"
+                               placeholder="Password">
                     </div>
-                    <!--<h5 class="modal-title" id="exampleModalLabel2">Modal</h5>-->
-                    <button type="button" id="btn-show-modal2" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="" id="registerForm" name="register-form">
-                        <div class="form-group">
-                            <i class="fa fa-user prefix"></i>
-                            <label for="registerInputfirstname">First name</label>
-                            <input type="text" name="firstName" class="form-control" id="registerInputfirstname" aria-describedby="emailHelp" placeholder="Firstname">
-                        </div>
-                        <div class="form-group">
-                            <i class="fa fa-user prefix"></i>
-                            <label for="registerInputLastname">Last name</label>
-                            <input type="text" name="lastName" class="form-control" id="registerInputLastname" placeholder="Lastname">
-                        </div>
-                        <div class="form-group">
-                            <i class="fas fa-phone-square"></i>
-                            <label for="registerInputPhone">Phone</label>
-                            <input type="text" name="phone" class="form-control" id="registerInputPhone" placeholder="Phone">
-                        </div>
-                        <div class="form-group">
-                            <i class="fas fa-address-card"></i>
-                            <label for="registerInputAddress">Address</label>
-                            <input type="text" name="address" class="form-control" id="registerInputAddress" placeholder="Address">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputGender">Gender</label>
-                            <select class="form-control" id="inputGender" name="gender">
-                                <option value="1">Male</option>
-                                <option value="0">Female</option>
-                                <option value="2">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <i class="fa fa-envelope prefix"></i>
-                            <label for="InputEmail2">Email address</label>
-                            <input type="email" name="email" class="form-control" id="InputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                            <i class="fa fa-lock prefix"></i>
-                            <label for="InputPassword2">Password</label>
-                            <input type="password" name="password" class="form-control" id="InputPassword2" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <i class="fa fa-lock prefix"></i>
-                            <label for="inputConfirmPassword">Confirm Password</label>
-                            <input class="form-control" type="password" id="inputConfirmPassword" name="confirm-password" placeholder="Confirm password">
-                        </div>
-                        <div class="form-group">
-                            <i class="far fa-calendar-alt"></i>
-                            <label for="inputBirthday">Birthday</label>
-                            <input type="date" class="form-group" id="inputBirthday" name="birthday" >
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                            <label class="form-check-label" for="exampleCheck2">Check me out</label>
-                        </div>
-                        <div class="form-group">
-                            <label>&nbsp;</label>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button>
-                            <button type="submit" class="btn btn-primary" id="btn-Sbmit" value="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="form-header blue-gradient">
-                        <h3 class="modal-title" ><i class="fa fa-lock" id="createModalLabel" ></i> Create Song:</h3>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
-                    <!--<h5 class="modal-title" id="exampleModalLabel">Modal</h5>-->
-                    <button type="button" id="btn-show-modal3" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!--<div class="container">-->
-                <!--<div class="card">-->
-                <!--<h5 class="card-header info-color white-text text-center py-4">-->
-                <!--<strong>Create song</strong>-->
-                <!--</h5>-->
-                <div class="card-body px-lg-5 pt-0">
-                    <form class="text-center" id="createSong" style="color: #757575;">
-                        <div class="md-form mt-3">
-                            <input type="text" id="materialContactFormName" name="name" class="form-control">
-                            <label for="materialContactFormName">Name</label>
+                    <div class="modal-footer">
+                        <div class="options">
+                            <span class="grey-text">Not a member? </span><a href="#">Sign Up</a>
+                            <span class="grey-text">Forgot </span><a href="#">Password?</a>
                         </div>
-                        <div class="md-form">
-                            <input type="text" id="materialFormSinger" name="singer" class="form-control">
-                            <label for="materialFormSinger">Singer name</label>
-                        </div>
-                        <div class="md-form">
-                            <input type="text" id="materialFormDescription" name="description" class="form-control" >
-                            <label for="materialFormDescription">Description</label>
-                        </div>
-                        <div class="md-form">
-                            <input type="text" id="materialFormAuthor" name="author" class="form-control">
-                            <label for="materialFormAuthor">Author</label>
-                        </div>
-                        <div class="md-form">
-                            <input type="text" id="materialFormThumbnail" name="thumbnail" class="form-control">
-                            <label for="materialFormThumbnail">Thumbnail</label>
-                        </div>
-                        <div class="md-form">
-                            <input type="text" id="materialFormLink" name="link" class="form-control">
-                            <label for="materialFormLink">Link</label>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" value="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="btn-submit" value="submit">Submit</button>
+                    </div>
 
-                <!--</div>-->
-                <!--</div>-->
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-    <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.validate.min.js"></script>
-    <script src="../js/additional-methods.min.js"></script>
-    <script src="../js/mdb.min.js"></script>
-    <script src="../js/config.js"></script>
-    <script src="../js/register.js"></script>
-    <script src="../js/login.js"></script>
-    <script src="../js/createSong.js"></script>
-    <script src="../js/latestSong.js"></script>
+<div class="modal fade" id="registerModal2" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="form-header blue-gradient ">
+                    <h3 class="modal-title"><i class="fa fa-user" id="registerModalLabel2"></i> Register:</h3>
+                </div>
+                <!--<h5 class="modal-title" id="exampleModalLabel2">Modal</h5>-->
+                <button type="button" id="btn-show-modal2" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" id="registerForm" name="register-form">
+                    <div class="form-group">
+                        <i class="fa fa-user prefix"></i>
+                        <label for="registerInputfirstname">First name</label>
+                        <input type="text" name="firstName" class="form-control" id="registerInputfirstname"
+                               aria-describedby="emailHelp" placeholder="Firstname">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-user prefix"></i>
+                        <label for="registerInputLastname">Last name</label>
+                        <input type="text" name="lastName" class="form-control" id="registerInputLastname"
+                               placeholder="Lastname">
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-phone-square"></i>
+                        <label for="registerInputPhone">Phone</label>
+                        <input type="text" name="phone" class="form-control" id="registerInputPhone"
+                               placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-address-card"></i>
+                        <label for="registerInputAddress">Address</label>
+                        <input type="text" name="address" class="form-control" id="registerInputAddress"
+                               placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-address-card"></i>
+                        <label for="registerInputAvatar">Avatar</label>
+                        <input type="text" name="avatar" class="form-control" id="registerInputAvatar"
+                               placeholder="Avatar">
+                    </div>
+                    <!--<div class="form-group">-->
+                        <!--<label for="inputGender">Gender</label>-->
+                        <!--<select class="form-control" id="inputGender" name="gender">-->
+                            <!--<option value="1">Male</option>-->
+                            <!--<option value="0">Female</option>-->
+                            <!--<option value="2">Other</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                    <div class="form-group">
+                        <i class="fa fa-envelope prefix"></i>
+                        <label for="InputEmail2">Email address</label>
+                        <input type="email" name="email" class="form-control" id="InputEmail2"
+                               aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone
+                            else.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock prefix"></i>
+                        <label for="InputPassword2">Password</label>
+                        <input type="password" name="password" class="form-control" id="InputPassword2"
+                               placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock prefix"></i>
+                        <label for="inputConfirmPassword">Confirm Password</label>
+                        <input class="form-control" type="password" id="inputConfirmPassword" name="confirm-password"
+                               placeholder="Confirm password">
+                    </div>
+                    <div class="form-group">
+                        <i class="far fa-calendar-alt"></i>
+                        <label for="inputBirthday">Birthday</label>
+                        <input type="date" class="form-group" id="inputBirthday" name="birthday">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                        <label class="form-check-label" for="exampleCheck2">Check me out</label>
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="btn-Sbmit" value="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="form-header blue-gradient">
+                    <h3 class="modal-title"><i class="fa fa-lock" id="createModalLabel"></i> Create Song:</h3>
+                </div>
+                <!--<h5 class="modal-title" id="exampleModalLabel">Modal</h5>-->
+                <button type="button" id="btn-show-modal3" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--<div class="container">-->
+            <!--<div class="card">-->
+            <!--<h5 class="card-header info-color white-text text-center py-4">-->
+            <!--<strong>Create song</strong>-->
+            <!--</h5>-->
+            <div class="card-body px-lg-5 pt-0 ">
+                <form class="text-center" id="createSong" style="color: #757575;">
+                    <div class="md-form mt-3">
+                        <input type="text" id="materialContactFormName" name="name" class="form-control">
+                        <label for="materialContactFormName">Name</label>
+                    </div>
+                    <div class="md-form">
+                        <input type="text" id="materialFormSinger" name="singer" class="form-control">
+                        <label for="materialFormSinger">Singer name</label>
+                    </div>
+                    <div class="md-form">
+                        <input type="text" id="materialFormDescription" name="description" class="form-control">
+                        <label for="materialFormDescription">Description</label>
+                    </div>
+                    <div class="md-form">
+                        <input type="text" id="materialFormAuthor" name="author" class="form-control">
+                        <label for="materialFormAuthor">Author</label>
+                    </div>
+                    <div class="md-form">
+                        <input type="text" id="materialFormThumbnail" name="thumbnail" class="form-control">
+                        <label for="materialFormThumbnail">Thumbnail</label>
+                    </div>
+                    <div class="md-form">
+                        <input type="text" id="materialFormLink" name="link" class="form-control">
+                        <label for="materialFormLink">Link</label>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect"
+                                type="submit" value="submit">Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
+<script src="../js/additional-methods.min.js"></script>
+<script src="../js/mdb.min.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0942d7e6005a95"  ></script>
+<script src="../js/config.js"></script>
+<script src="../js/register.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/createSong.js"></script>
+<script src="../js/latestSong.js"></script>
+
+
 </body>
 </html>

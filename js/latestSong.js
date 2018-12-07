@@ -1,11 +1,11 @@
-var MY_API = 'https://2-dot-backup-server-002.appspot.com/_api/v2/songs/get-free-songs';
+// var MY_API = 'https://2-dot-backup-server-002.appspot.com/_api/v2/songs/get-free-songs';
 document.addEventListener('DOMContentLoaded', function () {
     loadSongs();
 });
 
 function loadSongs() {
     $.ajax({
-        url: MY_API,
+        url: LIST_SONG_API,
         type: 'GET',
         contentType: "application/json; charset = utf-8",
         success: function (data, textStatus, jqXHR) {
@@ -57,9 +57,6 @@ function loadSongs() {
         },
     });
 };
-// function songPlay(link, name, singer, thumbnail) {
-//     $('#img').attr("src",link);
-// }
 function playSong(link, name, singer, thumbnail) {
     $('#player').attr("src", link);
     $('#current-play-title').text('Current:' + name + " - " + singer);
@@ -84,7 +81,6 @@ function calculateCurrentValue(currentTime) {
         current_seconds_long = currentTime % 60,
         current_seconds = current_seconds_long.toFixed(),
         current_time = (current_minute < 10 ? "0" + current_minute : current_minute) + ":" + (current_seconds < 10 ? "0" + current_seconds : current_seconds);
-
     return current_time;
 }
 

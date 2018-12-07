@@ -17,7 +17,6 @@ var validator = $('#registerForm').validate({
         password:{
             required: true,
             minlength: 2,
-            maxlength: 20
         },
         // 'confirm-password':{
         //     equalTo: '[name = "password"]'
@@ -40,40 +39,39 @@ var validator = $('#registerForm').validate({
     },
     messages:{
         firstName: {
-            required: 'vui lòng nhập tên .',
-            minlength: 'tên bạn quá ngắn , vui lòng nhập lại tối thiểu {0} kí tự .',
-            maxlength: 'tên bạn quá dài vui lòng nhập lại tối đa  {0} kí tự.'
+            required: 'Please enter firstname  .',
+            minlength: 'firstname is too short , please enter minimum {0} characters .',
+            maxlength: 'firstname is too long , please enter maximum {0} characters .'
         },
         lastName: {
             required: 'vui lòng nhập họ .',
-            minlength: 'họ bạn quá ngắn , vui lòng nhập lại tôi thiểu {0} kí tự.',
-            maxlength: 'họ bạn quá dài vui lòng nhập lại tối đa {0} kí tự.'
+            minlength: 'lastname is too short , please enter minimum {0} characters.',
+            maxlength: 'lastname is too long , please enter maximum {0} characters.'
         },
         email: {
-            required: 'vui lòng nhập email.',
-            email : 'vui lòng nhập email đúng định dạng.'
+            required: 'Please enter email.',
+            email : 'Please enter true email.'
         },
         password: {
-            required: 'vui lòng nhập mk của bạn.',
-            minlength: 'mk bạn quá ngắn , vui lòng nhập lại tối thiểu {0} kí tự .',
-            maxlength: 'mk bạn quá dài vui lòng nhập lại tối đa {0} kí tự.'
+            required: 'Please enter password.',
+            minlength: 'Password is too short , please enter minimum {0} characters .',
         },
         // 'confirm-password': {
         //     equalTo: 'password không giống nhau.'
         // },
         phone:{
-            required: 'Vui lòng nhập số điện thoại.',
-            maxlength: 'Vui lòng nhập đúng {0} số',
-            minlength: 'Vui lòng nhập đúng {0} số',
-            number: 'Vui lòng nhập số điện thoại đúng định dạng.'
+            required: 'Please enter phone number.',
+            maxlength: 'Please enter true {0} nummber',
+            minlength: 'Please enter true {0} nummber',
+            number: 'Please enter true phone nummber.'
         },
         avatar: {
-            required: 'Vui lòng nhập avatar.',
-            url: 'VUi lòng nhập avatar đúng định dạng'
+            required: 'PLease enter avatar.',
+            url: 'Please enter true URL'
         },
         address: {
-            required: 'vui lòng nhập địa chỉ.',
-            minlength: 'Vui lòng  nhập tối thiểu {0} kí tự',
+            required: 'Please enter address.',
+            minlength: 'Please enter true {0} characters ',
 
         }
     },
@@ -87,7 +85,7 @@ var validator = $('#registerForm').validate({
             phone: $(form["phone"]).val(),
             gender: $(form["gender"]).val(),
             email: $(form["email"]).val(),
-            avatar: 'ajskdj',
+            avatar: $(form["avatar"]).val(),
             birthday: $(form["birthday"]).val(),
         };
         $.ajax({
@@ -108,17 +106,7 @@ var validator = $('#registerForm').validate({
                 alert('Dang ky thanh cong!');
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                // alert('Error')
-                // console.log('error');
-                // console.log(jqXHR);
-                // console.log('-----');
-                // console.log(jqXHR.responseText);
-                // console.log('-----');
-                // console.log(jqXHR.responseJSON.error);
-                // console.log('-----');
-                // console.log(textStatus);
-                // console.log('-----');
-                // console.log(errorThrown);
+
                 if(jqXHR.responseJSON.error.size > 0) {
                     validator.showErrors({
                         firstName: 'Message error: ' + jqXHR.responseJSON.error.size

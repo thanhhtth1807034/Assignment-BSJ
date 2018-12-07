@@ -14,6 +14,7 @@ $('#btn-submit').click(function () {
         contentType: 'application/json',
         data : JSON.stringify(loginInfor),
         success: function (data, status, jqXhr) {
+            alert('Login success!')
             localStorage.setItem('my-token', data.token);
             $('#loginModal').modal('hide');
             $('#msg-success').text('Login success');
@@ -28,7 +29,7 @@ var validator = $('#loginForm').validate({
     rules: {
         password: {
             required: true,
-            minlength: 3
+            minlength: 2
         },
         'confirm-password':{
             equalTo :'[name = "password"]'
@@ -40,15 +41,15 @@ var validator = $('#loginForm').validate({
     },
     messages: {
         password: {
-            required: 'Vui lòng nhập mật khẩu',
-            minlength: 'mat khau qua ngan, Vui lòng nhập ít nhất {0} kí tự'
+            required: 'Please enter password',
+            minlength: 'Password is too short , please enter minimum {0} characters .'
         },
         email: {
-            required: "vui long nhap email",
-            email: 'vui long nhap email dug dinh dang',
+            required: 'Please enter email.',
+            email : 'Please enter true email.'
         },
         'confirm-password': {
-            equalTo: 'pass khong giống nhau.'
+            equalTo: 'pass not same.'
         },
     },
     submitHandler: function (form, event) {
